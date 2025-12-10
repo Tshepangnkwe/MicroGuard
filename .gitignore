@@ -1,0 +1,58 @@
+# Build artifacts
+firmware/build/
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# KiCad backup files
+hardware/**/*.bak
+hardware/**/*-bak
+hardware/**/*.kicad_pcb-bak
+hardware/**/*.kicad_sch-bak
+hardware/**/*.bck
+hardware/**/*-backups/
+hardware/**/*-cache.lib
+hardware/**/*.lck
+
+# Gerber output (usually regenerated)
+hardware/**/gerber/
+hardware/**/drill/
+
+# Simulation temporary files
+simulation/**/*.raw
+simulation/**/*.log
+simulation/**/*.net
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Calibration data (may contain device-specific data)
+tools/calibration/**/calibration_data/
+*.cal
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp

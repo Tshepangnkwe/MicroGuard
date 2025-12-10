@@ -14,6 +14,7 @@ Microguard is a comprehensive BMS solution designed to monitor and manage batter
 - **Safety Protection**: Overcharge, over-discharge, short circuit, and thermal runaway protection
 - **Communication Interface**: I2C, UART, and CAN bus support for external integration
 - **Low Power Design**: Optimized for minimal current consumption in standby mode
+- **TinyML Integration**: On-device machine learning for battery health prediction and anomaly detection
 
 ## Hardware
 
@@ -28,6 +29,7 @@ Microguard is a comprehensive BMS solution designed to monitor and manage batter
 - Real-time monitoring and control algorithms
 - Configurable parameters for different battery types
 - Data logging and diagnostic capabilities
+- Pre-trained TinyML models for predictive analytics (TensorFlow Lite Micro)
 
 ## Project Structure
 ```
@@ -44,10 +46,13 @@ microguard/
 │   │   ├── soc_estimation.c
 │   │   ├── temp_monitor.c
 │   │   ├── safety.c
-│   │   └── comm.c
+│   │   ├── comm.c
+│   │   └── tinyml.c         # ML inference
 │   ├── inc/                 # Header files
-│   ├── lib/                 # Libraries
+│   ├── lib/                 # Libraries (HAL, TFLite Micro)
 │   └── build/               # Build output
+├── ml/
+│   └── models/              # Pre-trained TFLite models
 ├── simulation/
 │   ├── spice/               # SPICE simulations
 │   └── models/              # Battery models
