@@ -1,4 +1,4 @@
-# Microguard
+# MicroGuard
 
 A low-power Battery Management System (BMS) built from scratch for portable electronics, IoT devices, and small-scale energy storage applications.
 
